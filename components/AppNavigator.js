@@ -4,8 +4,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { MasterList } from '../screens/MasterList';
 import { CoverPage } from '../screens/CoverPage';
 
+const Stack = createNativeStackNavigator();
+
 export default function AppNavigator() {
-    const Stack = createNativeStackNavigator();
     
     return (
         <NavigationContainer>

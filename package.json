@@ -23,7 +23,8 @@
     "react-native-safe-area-context": "4.6.3",
     "react-native-screens": "~3.22.0",
     "reactstrap": "^9.2.0",
-    "style-loader": "^3.3.3"
+    "style-loader": "^3.3.3",
+    "expo-font": "~11.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

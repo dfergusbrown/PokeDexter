@@ -6,8 +6,19 @@ import {
   ImageBackground,
   Button 
 } from 'react-native';
+import { useFonts } from 'expo-font';
 
 export const CoverPage = ({navigation}) => {
+
+  const [loaded] = useFonts({
+    PokemonSolid: require('../assets/fonts/PokemonSolid.ttf'),
+  });
+
+  if (!loaded) {
+    return (
+      <Text>Loading</Text>
+    );
+  }
 
     return(
         <View style={styles.container}>
@@ -37,10 +48,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#DB1D2E'
   },
   logo: {
-    color: "white",
+    color: "#FCC30A",
+    fontSize: "100",
     alignContent: 'center',
     textAlign: 'center',
-    fontSize: 30
-    // fontFamily: 'Pokemon Hollow'
+    fontSize: 50,
+    fontFamily: 'PokemonSolid'
   }
 });
